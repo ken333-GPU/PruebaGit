@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url(img/fondo.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+header{
+	background-color: #FFFFFF;
+	text-align: center;
+	padding: 5px;
+	align-items: center;
+}
+
+.logo{
+    display: flex;
+
+}
+
+.logo img{
+     height: 100px;
+}
+
+nav{
+	max-width: 921px;
+	margin: auto;
+	background-color: #FFFFFF;
+	font-size: 20px;
+	margin-top: 50px;
+	z-index: 100;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	 z-index: 100;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: black;
+	text-decoration: none;
+	 z-index: 100;
+}
+.menu-horizontal > li:hover{
+	background-color: #E00D0D;
+
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+	 z-index: 100;
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: black;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+#html{
+	margin: auto;
+	padding: 20px;
+	max-width: 921px;
+	background: white;
+
+}
+.formulario{
+	display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.formulario h1{
+	text-align:center;
+	padding:0 0 20px 0;
+	align-self: center;
+
+}
+
+.formulario form{
+    padding:0 50px;
+    box-sizing: border-box;
+
+}
+form .username{
+	position:relative;
+	border-bottom:2px solid #ADADAD;
+	margin:30px 0;
+
+}
+.username input{
+	width:100%;
+	padding:0 5px;
+	height:40px;
+	font-size:16px;
+	border:none;
+	background:none;
+	outline:none;
+
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 400px;
+	background:#FFFFFF;
+    border-radius:20px;
+
+}
+
+.username label{
+	position:absolute;
+	top: 50%;
+	left:5px;
+	color:#A2A2A2;
+	transform:translateY(-50%);
+	font-size:16px;
+	pointer-events:none;
+	transition:.3s;
+
+}
+.username span::before{
+	content:'';
+	position:absolute;
+	top:40px;
+	left:0;
+	width:100%;
+	height: 2px;
+	background:#E71616;
+
+}
+.username input:focus~label,
+.username input:valid~label{
+	top:-5px;
+	color:#E71616;
+	
+
+
+}
+.username input:focus~span::before,
+.username input:focus~span::before{
+	width:100%;
+	
+
+}
+
+input[type="submit"]{
+	width:100%;
+	height:50px;
+	border:1px solid;
+	background:#E71616;
+	border-radius:25px;
+	font-size:20px;
+	color:#FFFFFF;
+	cursor:pointer;
+	outline:none;
+
+}
+
+.contenedor .tabla{
+    margin: 50px 0 0 0;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 6px 6px 6px 6px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#008F39;}
